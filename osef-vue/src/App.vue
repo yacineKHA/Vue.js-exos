@@ -10,12 +10,12 @@ import Articles from './components/Articles.vue'
 
 export default {
   
-
   name: 'App',
   components: {
     HeaderTop,
     Articles,
   }
+
 }
 </script>
 
@@ -28,4 +28,5 @@ export default {
   #app {
     
   }
+  
 </style>
