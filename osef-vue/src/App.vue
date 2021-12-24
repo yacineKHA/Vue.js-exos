@@ -1,10 +1,10 @@
 <template>
-  <HeaderTop></HeaderTop>
- 
-  <section >
-    <transition name="anim">
+  <transition name="anim">
       <ConnectionModal  v-show="$store.state.toggleConnection"/>
-    </transition>
+  </transition>
+  <HeaderTop></HeaderTop>
+  <section >
+    
     <div></div>
     <div class="articles-div">
       <Articles/>

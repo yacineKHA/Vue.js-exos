@@ -4,14 +4,16 @@
         <div class="overlay"></div>
         <div class="contener">
             <form action="">
-              <h1>Connexion</h1>
+              <h3>Connexion</h3>
               
-              <div class="email">
-                <img src="../assets/email_black_36dp.png" width="40px" alt="img">
+              <div class="div">
+                <img src="../assets/email_black_36dp.png" height="25px" alt="img">
                 <input class="emailInput" placeholder="Email" type="text" required>
               </div>
-              <label for="">Password</label>
-              <input class="mdp" placeholder="Mot de passe" type="password" required>
+              <div class="div">
+                <img src="../assets/lock_black_36dp.png" height="25px" alt="img">
+                <input class="mdp" placeholder="Mot de passe" type="password" required>
+              </div>
               <button class="btn btn-primary">Se connecter</button>
             </form>
             <p>Pas de compte ? S'inscrire ici.</p>
@@ -61,7 +63,7 @@ export default {
         width: 500px;
         border-radius: 15px;
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.274);
-        margin-top: 100px;
+        margin-top: 170px;
         z-index: 4;
     }
 
@@ -71,7 +73,7 @@ export default {
         align-items: center;
         height: 30px;
         width: 30px;
-        margin-top: 80px;
+        margin-top: 140px;
         background-color: rgb(255, 255, 255);
         font-weight: bolder;
         border-radius: 50px;
@@ -89,11 +91,33 @@ export default {
         align-content: center;
     }
 
-    .email{
+    .div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
         border: 1px solid black;
+        margin-top: 25px;
+        height: 40px;
     }
 
-    h1{
+    .div:focus-within{
+       border: 2px solid black ;
+       
+    }
+
+    input{
+        border: 0;
+        padding-left: 10px ;
+        height: 100%;
+        outline: none;
+    }
+
+    img{
+        padding: 2px;
+    }
+
+    h3{
+        font-size: xx-large;
         text-align: center;
     }
 
@@ -105,14 +129,6 @@ export default {
         margin-top: 25px;
         border: 0px;
         height: 40px;
-    }
-
-    label{
-        margin-top: 15px;
-    }
-
-    .btn{
-        margin-top: 25px;
     }
 
     .overlay{
