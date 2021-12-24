@@ -1,20 +1,21 @@
 <template>
     <div id="conteneur">
-        <div id="article">
+        
             <div id="pseudo">
                 img et pseudo et groupe
             </div>
-            <div id="contenu">
-                <div id="img">
-                    img
-                </div>
-                <div id="texte">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro eos blanditiis cupiditate explicabo? Obcaecati blanditiis asperiores natus nostrum ut placeat vero eveniet nesciunt similique, omnis nemo! Alias, esse explicabo!
-                    Id ducimus, nostrum adipisci ab voluptatum saepe sed facilis animi dolorum quod nemo vitae corrupti doloremque debitis aliquam! Repellat ex odio necessitatibus sapiente velit dicta animi aliquam adipisci quae minima?
-                    Voluptate blanditiis quos minus facere nam eaque ipsam neque, quo illum voluptatem consectetur consequatur fugit perferendis rerum amet. Quisquam perspiciatis reprehenderit incidunt numquam aliquid eveniet reiciendis maxime, cum labore ratione.
-                </div>
-            </div>
-        </div>
+            <ul id="contenu">
+                <li>
+                    <div id="img">
+                        img
+                    </div>
+                    <div id="texte">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro eos blanditiis cupiditate explicabo? Obcaecati blanditiis asperiores natus nostrum ut placeat vero eveniet nesciunt similique, omnis nemo! Alias, esse explicabo!
+                        Id ducimus, nostrum adipisci ab voluptatum saepe sed facilis animi dolorum quod nemo vitae corrupti doloremque debitis aliquam! Repellat ex odio necessitatibus sapiente velit dicta animi aliquam adipisci quae minima?
+                        Voluptate blanditiis quos minus facere nam eaque ipsam neque, quo illum voluptatem consectetur consequatur fugit perferendis rerum amet. Quisquam perspiciatis reprehenderit incidunt numquam aliquid eveniet reiciendis maxime, cum labore ratione.
+                    </div>
+                </li>
+            </ul>
     </div>
 </template>
 
@@ -47,8 +48,6 @@
     }
 
     #article{
-        height: 300px;
-        width: 400px;
         background-color: chocolate;
         overflow:hidden;
     }

@@ -1,9 +1,9 @@
 <template>
 
     <div id="header">
-        <img src="logo" alt="Logo">
+        <img src="../assets/LogoOsef.png" width="60" alt="Logo">
         <input type="text" placeholder="Rechercher...">
-        <button id="button" >Se connecter</button>
+        <button @click="$store.commit('toggleConnectionSwitch')" id="button">Se connecter</button>
     </div>
 
 </template>
@@ -12,7 +12,6 @@
 
     export default {
         name:'headerTop',
-
     }
 
 </script>
@@ -53,6 +52,9 @@
     #button:hover{
         background-color: #418cee;
         box-shadow: 3px 3px black;
+        background: #2098D1;
+        transition-duration: 0.4s;
     }
 
+    
 </style>
